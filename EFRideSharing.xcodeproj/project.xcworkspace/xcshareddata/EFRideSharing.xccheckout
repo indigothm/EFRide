@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>68BF5031-F0A0-40C5-8D0B-D340F61D5D83</string>
+	<key>IDESourceControlProjectName</key>
+	<string>EFRideSharing</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>121E80CB7555726B1748F2CE1D4F90F9444A8736</key>
+		<string>https://github.com/indigothm/EFRide.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>EFRideSharing.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>121E80CB7555726B1748F2CE1D4F90F9444A8736</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/indigothm/EFRide.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>121E80CB7555726B1748F2CE1D4F90F9444A8736</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>121E80CB7555726B1748F2CE1D4F90F9444A8736</string>
+			<key>IDESourceControlWCCName</key>
+			<string>EFRideSharing</string>
+		</dict>
+	</array>
+</dict>
+</plist>
