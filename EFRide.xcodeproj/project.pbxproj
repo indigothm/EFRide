@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F76981C1BA9107000329A02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F76981B1BA9107000329A02 /* AppDelegate.swift */; };
+		3F76981E1BA9107000329A02 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F76981D1BA9107000329A02 /* FirstViewController.swift */; };
+		3F7698201BA9107000329A02 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F76981F1BA9107000329A02 /* SecondViewController.swift */; };
+		3F7698231BA9107000329A02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7698211BA9107000329A02 /* Main.storyboard */; };
+		3F7698251BA9107000329A02 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F7698241BA9107000329A02 /* Images.xcassets */; };
+		3F7698281BA9107000329A02 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F7698261BA9107000329A02 /* LaunchScreen.xib */; };
+		3F7698341BA9107000329A02 /* EFRideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7698331BA9107000329A02 /* EFRideTests.swift */; };
+		F625E11AFB1DAAC1CBBFAD1D /* Pods_EFRide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41FB404864912CD8D55BC6C4 /* Pods_EFRide.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F76982E1BA9107000329A02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F76980E1BA9107000329A02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F7698151BA9107000329A02;
+			remoteInfo = EFRide;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F7698161BA9107000329A02 /* EFRide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EFRide.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F76981A1BA9107000329A02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F76981B1BA9107000329A02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F76981D1BA9107000329A02 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		3F76981F1BA9107000329A02 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		3F7698221BA9107000329A02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F7698241BA9107000329A02 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3F7698271BA9107000329A02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3F76982D1BA9107000329A02 /* EFRideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EFRideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F7698321BA9107000329A02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F7698331BA9107000329A02 /* EFRideTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EFRideTests.swift; sourceTree = "<group>"; };
+		41FB404864912CD8D55BC6C4 /* Pods_EFRide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EFRide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73B7C61F8468C072C87FE5F0 /* Pods-EFRide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFRide.release.xcconfig"; path = "Pods/Target Support Files/Pods-EFRide/Pods-EFRide.release.xcconfig"; sourceTree = "<group>"; };
+		8DB965E1B7E19CE729B42BB9 /* Pods-EFRide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFRide.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EFRide/Pods-EFRide.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F7698131BA9107000329A02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F625E11AFB1DAAC1CBBFAD1D /* Pods_EFRide.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F76982A1BA9107000329A02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B062B3393D858577006722A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DB965E1B7E19CE729B42BB9 /* Pods-EFRide.debug.xcconfig */,
+				73B7C61F8468C072C87FE5F0 /* Pods-EFRide.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3F76980D1BA9107000329A02 = {
+			isa = PBXGroup;
+			children = (
+				3F7698181BA9107000329A02 /* EFRide */,
+				3F7698301BA9107000329A02 /* EFRideTests */,
+				3F7698171BA9107000329A02 /* Products */,
+				3B062B3393D858577006722A /* Pods */,
+				5E55F5B2A1437E5477B2F632 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3F7698171BA9107000329A02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F7698161BA9107000329A02 /* EFRide.app */,
+				3F76982D1BA9107000329A02 /* EFRideTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F7698181BA9107000329A02 /* EFRide */ = {
+			isa = PBXGroup;
+			children = (
+				3F76981B1BA9107000329A02 /* AppDelegate.swift */,
+				3F76981D1BA9107000329A02 /* FirstViewController.swift */,
+				3F76981F1BA9107000329A02 /* SecondViewController.swift */,
+				3F7698211BA9107000329A02 /* Main.storyboard */,
+				3F7698241BA9107000329A02 /* Images.xcassets */,
+				3F7698261BA9107000329A02 /* LaunchScreen.xib */,
+				3F7698191BA9107000329A02 /* Supporting Files */,
+			);
+			path = EFRide;
+			sourceTree = "<group>";
+		};
+		3F7698191BA9107000329A02 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F76981A1BA9107000329A02 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F7698301BA9107000329A02 /* EFRideTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F7698331BA9107000329A02 /* EFRideTests.swift */,
+				3F7698311BA9107000329A02 /* Supporting Files */,
+			);
+			path = EFRideTests;
+			sourceTree = "<group>";
+		};
+		3F7698311BA9107000329A02 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F7698321BA9107000329A02 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5E55F5B2A1437E5477B2F632 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41FB404864912CD8D55BC6C4 /* Pods_EFRide.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F7698151BA9107000329A02 /* EFRide */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F7698371BA9107000329A02 /* Build configuration list for PBXNativeTarget "EFRide" */;
+			buildPhases = (
+				CEC9F94BBA28E3997A612260 /* Check Pods Manifest.lock */,
+				3F7698121BA9107000329A02 /* Sources */,
+				3F7698131BA9107000329A02 /* Frameworks */,
+				3F7698141BA9107000329A02 /* Resources */,
+				E386EA53C81B69BF57EA5FF4 /* Embed Pods Frameworks */,
+				9A5EA4AF43273C17CB7B6ACA /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EFRide;
+			productName = EFRide;
+			productReference = 3F7698161BA9107000329A02 /* EFRide.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F76982C1BA9107000329A02 /* EFRideTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F76983A1BA9107000329A02 /* Build configuration list for PBXNativeTarget "EFRideTests" */;
+			buildPhases = (
+				3F7698291BA9107000329A02 /* Sources */,
+				3F76982A1BA9107000329A02 /* Frameworks */,
+				3F76982B1BA9107000329A02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F76982F1BA9107000329A02 /* PBXTargetDependency */,
+			);
+			name = EFRideTests;
+			productName = EFRideTests;
+			productReference = 3F76982D1BA9107000329A02 /* EFRideTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F76980E1BA9107000329A02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Ilia Tikhomirov";
+				TargetAttributes = {
+					3F7698151BA9107000329A02 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					3F76982C1BA9107000329A02 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 3F7698151BA9107000329A02;
+					};
+				};
+			};
+			buildConfigurationList = 3F7698111BA9107000329A02 /* Build configuration list for PBXProject "EFRide" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F76980D1BA9107000329A02;
+			productRefGroup = 3F7698171BA9107000329A02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F7698151BA9107000329A02 /* EFRide */,
+				3F76982C1BA9107000329A02 /* EFRideTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F7698141BA9107000329A02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F7698231BA9107000329A02 /* Main.storyboard in Resources */,
+				3F7698281BA9107000329A02 /* LaunchScreen.xib in Resources */,
+				3F7698251BA9107000329A02 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F76982B1BA9107000329A02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A5EA4AF43273C17CB7B6ACA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EFRide/Pods-EFRide-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEC9F94BBA28E3997A612260 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E386EA53C81B69BF57EA5FF4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EFRide/Pods-EFRide-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F7698121BA9107000329A02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F7698201BA9107000329A02 /* SecondViewController.swift in Sources */,
+				3F76981C1BA9107000329A02 /* AppDelegate.swift in Sources */,
+				3F76981E1BA9107000329A02 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F7698291BA9107000329A02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F7698341BA9107000329A02 /* EFRideTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F76982F1BA9107000329A02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F7698151BA9107000329A02 /* EFRide */;
+			targetProxy = 3F76982E1BA9107000329A02 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F7698211BA9107000329A02 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F7698221BA9107000329A02 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F7698261BA9107000329A02 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F7698271BA9107000329A02 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F7698351BA9107000329A02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3F7698361BA9107000329A02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F7698381BA9107000329A02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DB965E1B7E19CE729B42BB9 /* Pods-EFRide.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EFRide/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3F7698391BA9107000329A02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73B7C61F8468C072C87FE5F0 /* Pods-EFRide.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EFRide/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3F76983B1BA9107000329A02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EFRideTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EFRide.app/EFRide";
+			};
+			name = Debug;
+		};
+		3F76983C1BA9107000329A02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EFRideTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EFRide.app/EFRide";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F7698111BA9107000329A02 /* Build configuration list for PBXProject "EFRide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F7698351BA9107000329A02 /* Debug */,
+				3F7698361BA9107000329A02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F7698371BA9107000329A02 /* Build configuration list for PBXNativeTarget "EFRide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F7698381BA9107000329A02 /* Debug */,
+				3F7698391BA9107000329A02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F76983A1BA9107000329A02 /* Build configuration list for PBXNativeTarget "EFRideTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F76983B1BA9107000329A02 /* Debug */,
+				3F76983C1BA9107000329A02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F76980E1BA9107000329A02 /* Project object */;
+}
