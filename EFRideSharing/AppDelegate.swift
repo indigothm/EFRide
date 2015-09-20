@@ -7,19 +7,44 @@
 //
 
 import UIKit
+import Firebase
+import FBSDKCoreKit
+import FBSDKLoginKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    let ref = Firebase(url: "https://efride.firebaseio.com")
     var window: UIWindow?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-    
-     //   ( window?.rootViewController as! UITabBarController ).tabBar.tintColor =  UIColor(red:0.53, green:0.71, blue:0.91, alpha:1.0)
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        var storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        return true
+        if ref.authData != nil {
+            // user authenticated
+            println(ref.authData)
+            var initialViewController = storyboard.instantiateViewControllerWithIdentifier("tabBarInit") as! UITabBarController
+            //fix tint
+            initialViewController.tabBar.tintColor =  UIColor(red:0.53, green:0.71, blue:0.91, alpha:1.0)
+            
+            self.window?.rootViewController = initialViewController
+            self.window?.makeKeyAndVisible()
+            
+            
+        } else {
+            // No user is signed in
+            var initialViewController = storyboard.instantiateViewControllerWithIdentifier("loginView") as! UIViewController
+            
+            self.window?.rootViewController = initialViewController
+            self.window?.makeKeyAndVisible()
+        }
+        
+        
+        return FBSDKApplicationDelegate.sharedInstance()
+            .application(application, didFinishLaunchingWithOptions: launchOptions)
     }
 
     func applicationWillResignActive(application: UIApplication) {
@@ -38,10 +63,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        FBSDKAppEvents.activateApp()
     }
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    func application(application: UIApplication, openURL url: NSURL,
+        sourceApplication: String?, annotation: AnyObject?) -> Bool {
+            return FBSDKApplicationDelegate.sharedInstance()
+                .application(application, openURL: url,
+                    sourceApplication: sourceApplication, annotation: annotation)
     }
 
 

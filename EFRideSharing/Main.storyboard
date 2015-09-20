@@ -195,7 +195,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBarInit" id="49e-Tb-3d3" sceneMemberID="viewController">
                     <keyCommands/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
@@ -215,7 +215,7 @@
         <!--Login View Controller-->
         <scene sceneID="9dI-lv-mWN">
             <objects>
-                <viewController id="3X4-jW-V5h" customClass="LoginViewController" customModule="EFRideSharing" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginView" id="3X4-jW-V5h" customClass="LoginViewController" customModule="EFRideSharing" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Nzh-57-j3A"/>
                         <viewControllerLayoutGuide type="bottom" id="LJS-Yd-rPm"/>
@@ -273,10 +273,13 @@
                         </variation>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <segue destination="49e-Tb-3d3" kind="presentation" identifier="loginSuccess" modalTransitionStyle="flipHorizontal" id="f8Q-Fc-xC2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="baU-xi-8Ba" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-746" y="0.0"/>
+            <point key="canvasLocation" x="-804" y="-6"/>
         </scene>
     </scenes>
     <resources>
