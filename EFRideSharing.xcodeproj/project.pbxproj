@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F962F981BAE7DF100F110E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F962F971BAE7DF100F110E5 /* AppDelegate.swift */; };
-		3F962F9A1BAE7DF100F110E5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F962F991BAE7DF100F110E5 /* FirstViewController.swift */; };
-		3F962F9C1BAE7DF100F110E5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F962F9B1BAE7DF100F110E5 /* SecondViewController.swift */; };
-		3F962F9F1BAE7DF100F110E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F962F9D1BAE7DF100F110E5 /* Main.storyboard */; };
 		3F962FA11BAE7DF100F110E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F962FA01BAE7DF100F110E5 /* Images.xcassets */; };
 		3F962FA41BAE7DF100F110E5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F962FA21BAE7DF100F110E5 /* LaunchScreen.xib */; };
 		3F962FB01BAE7DF100F110E5 /* EFRideSharingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F962FAF1BAE7DF100F110E5 /* EFRideSharingTests.swift */; };
+		3F962FBE1BAE7E0700F110E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F962FBA1BAE7E0700F110E5 /* AppDelegate.swift */; };
+		3F962FBF1BAE7E0700F110E5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F962FBB1BAE7E0700F110E5 /* FirstViewController.swift */; };
+		3F962FC01BAE7E0700F110E5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F962FBC1BAE7E0700F110E5 /* SecondViewController.swift */; };
+		3F962FC11BAE7E0700F110E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F962FBD1BAE7E0700F110E5 /* Main.storyboard */; };
+		3F962FC31BAE7E5F00F110E5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F962FC21BAE7E5F00F110E5 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,16 +29,17 @@
 
 /* Begin PBXFileReference section */
 		3F962F921BAE7DF100F110E5 /* EFRideSharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EFRideSharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F962F961BAE7DF100F110E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F962F971BAE7DF100F110E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3F962F991BAE7DF100F110E5 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		3F962F9B1BAE7DF100F110E5 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		3F962F9E1BAE7DF100F110E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F962FA01BAE7DF100F110E5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3F962FA31BAE7DF100F110E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3F962FA91BAE7DF100F110E5 /* EFRideSharingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EFRideSharingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F962FAE1BAE7DF100F110E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F962FAF1BAE7DF100F110E5 /* EFRideSharingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EFRideSharingTests.swift; sourceTree = "<group>"; };
+		3F962FB91BAE7E0600F110E5 /* EFRideSharing-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EFRideSharing-Bridging-Header.h"; sourceTree = "<group>"; };
+		3F962FBA1BAE7E0700F110E5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F962FBB1BAE7E0700F110E5 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		3F962FBC1BAE7E0700F110E5 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		3F962FBD1BAE7E0700F110E5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3F962FC21BAE7E5F00F110E5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +81,14 @@
 		3F962F941BAE7DF100F110E5 /* EFRideSharing */ = {
 			isa = PBXGroup;
 			children = (
-				3F962F971BAE7DF100F110E5 /* AppDelegate.swift */,
-				3F962F991BAE7DF100F110E5 /* FirstViewController.swift */,
-				3F962F9B1BAE7DF100F110E5 /* SecondViewController.swift */,
-				3F962F9D1BAE7DF100F110E5 /* Main.storyboard */,
+				3F962FBA1BAE7E0700F110E5 /* AppDelegate.swift */,
+				3F962FBB1BAE7E0700F110E5 /* FirstViewController.swift */,
+				3F962FBC1BAE7E0700F110E5 /* SecondViewController.swift */,
+				3F962FBD1BAE7E0700F110E5 /* Main.storyboard */,
 				3F962FA01BAE7DF100F110E5 /* Images.xcassets */,
 				3F962FA21BAE7DF100F110E5 /* LaunchScreen.xib */,
 				3F962F951BAE7DF100F110E5 /* Supporting Files */,
+				3F962FB91BAE7E0600F110E5 /* EFRideSharing-Bridging-Header.h */,
 			);
 			path = EFRideSharing;
 			sourceTree = "<group>";
@@ -93,7 +96,7 @@
 		3F962F951BAE7DF100F110E5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3F962F961BAE7DF100F110E5 /* Info.plist */,
+				3F962FC21BAE7E5F00F110E5 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -195,7 +198,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F962F9F1BAE7DF100F110E5 /* Main.storyboard in Resources */,
+				3F962FC31BAE7E5F00F110E5 /* Info.plist in Resources */,
+				3F962FC11BAE7E0700F110E5 /* Main.storyboard in Resources */,
 				3F962FA41BAE7DF100F110E5 /* LaunchScreen.xib in Resources */,
 				3F962FA11BAE7DF100F110E5 /* Images.xcassets in Resources */,
 			);
@@ -215,9 +219,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F962F9C1BAE7DF100F110E5 /* SecondViewController.swift in Sources */,
-				3F962F981BAE7DF100F110E5 /* AppDelegate.swift in Sources */,
-				3F962F9A1BAE7DF100F110E5 /* FirstViewController.swift in Sources */,
+				3F962FC01BAE7E0700F110E5 /* SecondViewController.swift in Sources */,
+				3F962FBE1BAE7E0700F110E5 /* AppDelegate.swift in Sources */,
+				3F962FBF1BAE7E0700F110E5 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,14 +244,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3F962F9D1BAE7DF100F110E5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3F962F9E1BAE7DF100F110E5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3F962FA21BAE7DF100F110E5 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -344,9 +340,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = EFRideSharing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EFRideSharing/EFRideSharing-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -354,9 +353,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = EFRideSharing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EFRideSharing/EFRideSharing-Bridging-Header.h";
 			};
 			name = Release;
 		};
