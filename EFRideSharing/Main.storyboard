@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3X4-jW-V5h">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -8,7 +8,7 @@
         <!--Avaliable Rides-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="EFRide" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="EFRideSharing" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -93,7 +93,7 @@
                             <constraint firstItem="T6r-Me-WEI" firstAttribute="top" secondItem="STd-xP-mNF" secondAttribute="bottom" id="v0L-pO-dix"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Avaliable Rides" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Avaliable Rides" image="taxi" id="acW-dT-cKf"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
@@ -125,7 +125,7 @@
         <!--My Rides-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="EFRide" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="EFRideSharing" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -185,7 +185,7 @@
                             <constraint firstItem="zEq-FU-wV5" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="30" id="t1Q-f9-C96"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="My Rides" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="My Rides" image="people" id="cPa-gy-q4n"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
@@ -212,10 +212,76 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="9dI-lv-mWN">
+            <objects>
+                <viewController id="3X4-jW-V5h" customClass="LoginViewController" customModule="EFRideSharing" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nzh-57-j3A"/>
+                        <viewControllerLayoutGuide type="bottom" id="LJS-Yd-rPm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hdo-bh-6e5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWp-Kn-NRD">
+                                <rect key="frame" x="229" y="540" width="143" height="30"/>
+                                <state key="normal" title="Login with Facebook">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginWithFacebookDidTouch:" destination="3X4-jW-V5h" eventType="touchUpInside" id="VFZ-T4-Wsv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EFRide " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vti-Eo-V8L">
+                                <rect key="frame" x="239" y="251" width="123" height="46"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Split taxi rides costs with other people" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S88-GW-Kfh">
+                                <rect key="frame" x="166" y="327" width="268" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4bD-Zu-0VB">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
+                                <color key="backgroundColor" red="0.42745098040000001" green="0.64705882349999999" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Kzw-S3-80I"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4bD-Zu-0VB" firstAttribute="leading" secondItem="Hdo-bh-6e5" secondAttribute="leading" id="Cce-jl-V5N"/>
+                            <constraint firstItem="S88-GW-Kfh" firstAttribute="top" secondItem="Vti-Eo-V8L" secondAttribute="bottom" constant="30" id="Il3-2L-Au3"/>
+                            <constraint firstAttribute="centerY" secondItem="Vti-Eo-V8L" secondAttribute="centerY" constant="26" id="LYe-58-aAa"/>
+                            <constraint firstAttribute="centerX" secondItem="Vti-Eo-V8L" secondAttribute="centerX" constant="-0.5" id="Y7d-gb-CsM"/>
+                            <constraint firstItem="LJS-Yd-rPm" firstAttribute="top" secondItem="WWp-Kn-NRD" secondAttribute="bottom" constant="30" id="aua-H5-GZS"/>
+                            <constraint firstAttribute="trailing" secondItem="4bD-Zu-0VB" secondAttribute="trailing" id="c4v-4u-JVX"/>
+                            <constraint firstAttribute="centerX" secondItem="S88-GW-Kfh" secondAttribute="centerX" id="j9B-rG-6V8"/>
+                            <constraint firstItem="Vti-Eo-V8L" firstAttribute="top" secondItem="Nzh-57-j3A" secondAttribute="bottom" constant="70" id="x2V-4T-KDP"/>
+                            <constraint firstAttribute="centerX" secondItem="WWp-Kn-NRD" secondAttribute="centerX" constant="-0.5" id="xHI-ER-NzL"/>
+                            <constraint firstItem="4bD-Zu-0VB" firstAttribute="top" secondItem="Hdo-bh-6e5" secondAttribute="top" id="xnK-xe-GDA"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="x2V-4T-KDP"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="baU-xi-8Ba" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-746" y="0.0"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="people" width="25" height="19"/>
+        <image name="taxi" width="25" height="21"/>
     </resources>
     <color key="tintColor" red="0.58823529411764708" green="0.73333333333333328" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
 </document>
