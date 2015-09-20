@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  EFRideSharing
+//  EFRide
 //
-//  Created by Ilia Tikhomirov on 20/09/15.
+//  Created by Ilia Tikhomirov on 15/09/15.
 //  Copyright (c) 2015 Ilia Tikhomirov. All rights reserved.
 //
 
@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+    
+        ( window?.rootViewController as! UITabBarController ).tabBar.tintColor =  UIColor(red:0.53, green:0.71, blue:0.91, alpha:1.0)
+        
         return true
     }
 

@@ -1,8 +1,8 @@
 //
 //  SecondViewController.swift
-//  EFRideSharing
+//  EFRide
 //
-//  Created by Ilia Tikhomirov on 20/09/15.
+//  Created by Ilia Tikhomirov on 15/09/15.
 //  Copyright (c) 2015 Ilia Tikhomirov. All rights reserved.
 //
 
