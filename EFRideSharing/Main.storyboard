@@ -28,7 +28,7 @@
                                 <rect key="frame" x="0.0" y="64" width="414" height="623"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="rideCell" rowHeight="100" id="1nv-q4-VeG">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="rideCell" rowHeight="100" id="1nv-q4-VeG" customClass="RideTableViewCell" customModule="EFRideSharing" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1nv-q4-VeG" id="LEX-GL-zZq">
@@ -54,6 +54,11 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="fromLabel" destination="ElW-Hb-tCa" id="Blj-xe-hOm"/>
+                                            <outlet property="timeLabel" destination="tp2-4p-doC" id="Gbd-MC-sI9"/>
+                                            <outlet property="toLabel" destination="E8O-GE-bAA" id="Gki-PU-cc8"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

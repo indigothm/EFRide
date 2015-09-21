@@ -16,6 +16,7 @@
 		3F962FBF1BAE7E0700F110E5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F962FBB1BAE7E0700F110E5 /* FirstViewController.swift */; };
 		3F962FC01BAE7E0700F110E5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F962FBC1BAE7E0700F110E5 /* SecondViewController.swift */; };
 		3F962FC11BAE7E0700F110E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F962FBD1BAE7E0700F110E5 /* Main.storyboard */; };
+		3FE30A121BAF9514008B32FD /* RideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE30A111BAF9514008B32FD /* RideTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		3F962FBC1BAE7E0700F110E5 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		3F962FBD1BAE7E0700F110E5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3F962FC21BAE7E5F00F110E5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FE30A111BAF9514008B32FD /* RideTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideTableViewCell.swift; sourceTree = "<group>"; };
 		70F3407ACB0ABF894D17C7F7 /* Pods-EFRideSharing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFRideSharing.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EFRideSharing/Pods-EFRideSharing.debug.xcconfig"; sourceTree = "<group>"; };
 		969D0CF77ACE0AF1DEF39F80 /* Pods-EFRideSharing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFRideSharing.release.xcconfig"; path = "Pods/Target Support Files/Pods-EFRideSharing/Pods-EFRideSharing.release.xcconfig"; sourceTree = "<group>"; };
 		A44F603D1DE4E88EF152A0F8 /* Pods_EFRideSharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EFRideSharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +94,7 @@
 				3F80CD311BAF3998002F7F9B /* LoginViewController.swift */,
 				3F962FBA1BAE7E0700F110E5 /* AppDelegate.swift */,
 				3F962FBB1BAE7E0700F110E5 /* FirstViewController.swift */,
+				3FE30A111BAF9514008B32FD /* RideTableViewCell.swift */,
 				3F962FBC1BAE7E0700F110E5 /* SecondViewController.swift */,
 				3F962FBD1BAE7E0700F110E5 /* Main.storyboard */,
 				3F962FA01BAE7DF100F110E5 /* Images.xcassets */,
@@ -296,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F80CD321BAF3998002F7F9B /* LoginViewController.swift in Sources */,
+				3FE30A121BAF9514008B32FD /* RideTableViewCell.swift in Sources */,
 				3F962FC01BAE7E0700F110E5 /* SecondViewController.swift in Sources */,
 				3F962FBE1BAE7E0700F110E5 /* AppDelegate.swift in Sources */,
 				3F962FBF1BAE7E0700F110E5 /* FirstViewController.swift in Sources */,
