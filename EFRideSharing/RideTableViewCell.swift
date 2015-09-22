@@ -14,14 +14,10 @@ class RideTableViewCell: UITableViewCell {
     @IBOutlet weak var fromLabel: UILabel!
     @IBOutlet weak var toLabel: UILabel!
     
-    var timeVal: String!
-    var fromVal: String!
-    var toVal: String!
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
         
     }
 
