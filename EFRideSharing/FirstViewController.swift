@@ -7,20 +7,39 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseUI
 
 
 
-class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
+class FirstViewController: UIViewController, UITableViewDelegate  {
     
     @IBOutlet weak var ridesTableView: UITableView!
-    let textCellIdentifier = "rideCell"
+    
+    var ref = Firebase(url: "https://efride.firebaseio.com/Rides")
+    
+    var dataSource: FirebaseTableViewDataSource!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        ridesTableView.delegate = self
-        ridesTableView.dataSource = self
         
+        dataSource = FirebaseTableViewDataSource(ref: ref, cellReuseIdentifier: "rideCell", view: self.ridesTableView)
+
+        
+        dataSource.populateCellWithBlock
+            { (cell,snapshot) -> Void in
+                
+                let tvc: UITableViewCell = cell as! UITableViewCell
+                let snapshot: FDataSnapshot = snapshot as! FDataSnapshot
+                
+                tvc.textLabel?.text = snapshot.value["from"] as? String
+                
+        }
+        
+        
+        ridesTableView.delegate = self
+        ridesTableView.dataSource = dataSource
         
         
     }

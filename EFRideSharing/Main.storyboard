@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3X4-jW-V5h">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Avaliable Rides-->
@@ -24,39 +23,6 @@
                                     <constraint firstAttribute="height" constant="20" id="GUO-fY-duZ"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="T6r-Me-WEI">
-                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="rideCell" rowHeight="100" id="1nv-q4-VeG">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1nv-q4-VeG" id="LEX-GL-zZq">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="from: EF" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ElW-Hb-tCa">
-                                                    <rect key="frame" x="147" y="26" width="59" height="21"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
-                                                    <color key="textColor" red="0.68627450980392157" green="0.68627450980392157" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="to: White Plains" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8O-GE-bAA">
-                                                    <rect key="frame" x="147" y="53" width="109" height="21"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
-                                                    <color key="textColor" red="0.68627450980392157" green="0.68627450980392157" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tp2-4p-doC">
-                                                    <rect key="frame" x="20" y="26" width="103" height="48"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="40"/>
-                                                    <color key="textColor" red="0.52941176470588236" green="0.70588235294117652" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="STd-xP-mNF">
                                 <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                                 <constraints>
@@ -77,27 +43,40 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="3cD-9N-nh4">
+                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="rideCell" id="ipC-Kc-CF8">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ipC-Kc-CF8" id="1GS-vG-LEN">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="T6r-Me-WEI" secondAttribute="trailing" id="9Vc-cH-dsR"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="T6r-Me-WEI" secondAttribute="bottom" id="AEU-o4-yRm"/>
-                            <constraint firstItem="T6r-Me-WEI" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="FSw-It-MqZ"/>
                             <constraint firstItem="STd-xP-mNF" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="Isq-4l-u1F"/>
+                            <constraint firstItem="3cD-9N-nh4" firstAttribute="top" secondItem="STd-xP-mNF" secondAttribute="bottom" id="LL9-Zu-iwQ"/>
                             <constraint firstAttribute="trailing" secondItem="2K9-p8-2PG" secondAttribute="trailing" id="Ph0-xU-abq"/>
+                            <constraint firstAttribute="trailing" secondItem="3cD-9N-nh4" secondAttribute="trailing" id="QLU-tO-wdx"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="3cD-9N-nh4" secondAttribute="bottom" id="aWm-mr-p69"/>
                             <constraint firstAttribute="centerX" secondItem="STd-xP-mNF" secondAttribute="centerX" id="awP-gl-BHz"/>
                             <constraint firstItem="2K9-p8-2PG" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="i5i-Cu-NXy"/>
                             <constraint firstAttribute="trailing" secondItem="STd-xP-mNF" secondAttribute="trailing" id="k0i-SS-0eg"/>
                             <constraint firstItem="2K9-p8-2PG" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="mAy-Q3-dRt"/>
+                            <constraint firstItem="3cD-9N-nh4" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="pQQ-dS-hFE"/>
                             <constraint firstItem="STd-xP-mNF" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="q2V-k2-O2s"/>
-                            <constraint firstItem="T6r-Me-WEI" firstAttribute="top" secondItem="STd-xP-mNF" secondAttribute="bottom" id="v0L-pO-dix"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Avaliable Rides" image="taxi" id="acW-dT-cKf"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="ridesTableView" destination="T6r-Me-WEI" id="6Mq-KQ-3Gg"/>
+                        <outlet property="ridesTableView" destination="3cD-9N-nh4" id="zkl-bQ-94P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -134,19 +113,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="You have not selected any rides" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="46" y="279" width="510" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please check the avaliable rides" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="197" y="329" width="207" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gMh-KS-lp1">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <constraints>
@@ -175,14 +141,8 @@
                             <constraint firstAttribute="trailing" secondItem="gMh-KS-lp1" secondAttribute="trailing" id="651-ua-1Um"/>
                             <constraint firstItem="sdx-j0-Mzx" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="8Dh-CQ-CeX"/>
                             <constraint firstAttribute="centerX" secondItem="gMh-KS-lp1" secondAttribute="centerX" id="CbN-bH-bxq"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="zEq-FU-wV5" secondAttribute="trailing" constant="28" id="DEj-ex-IdL"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
                             <constraint firstItem="gMh-KS-lp1" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="MuA-qY-ppV"/>
                             <constraint firstAttribute="trailing" secondItem="sdx-j0-Mzx" secondAttribute="trailing" id="izo-oK-WXU"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
-                            <constraint firstItem="zEq-FU-wV5" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="30" id="t1Q-f9-C96"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="My Rides" image="people" id="cPa-gy-q4n"/>
@@ -236,13 +196,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EFRide " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vti-Eo-V8L">
                                 <rect key="frame" x="239" y="251" width="123" height="46"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="40"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Split taxi rides costs with other people" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S88-GW-Kfh">
                                 <rect key="frame" x="166" y="327" width="268" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4bD-Zu-0VB">
