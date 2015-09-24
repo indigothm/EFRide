@@ -26,7 +26,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let stringDate = "2015-09-24 10:32"
+        let stringDate = "2015-09-24 18:32"
         
         var formatter = NSDateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm"
@@ -108,6 +108,14 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 let newCellContent = Ride(to: toVal, from: fromVal, time: date!)
                 
                 rideArray.append(newCellContent)
+                rideArray.sort({$0.time!.timeIntervalSinceNow < $1.time!.timeIntervalSinceNow})
+                
+                println("time travel")
+                for r in rideArray {
+                    println(r.time!)
+                
+                }
+                
                 self.ridesTableView.reloadData()
                 
                 // TODO: Assign cell atributes with their values from database
