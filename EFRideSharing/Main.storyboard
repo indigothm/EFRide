@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3X4-jW-V5h">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Avaliable Rides-->
@@ -43,32 +44,98 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="3cD-9N-nh4">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4AA-ee-QdB">
                                 <rect key="frame" x="0.0" y="64" width="414" height="623"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="rideCell" id="ipC-Kc-CF8">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="rideCell" rowHeight="100" id="r7g-O9-azV" customClass="RideTableViewCell" customModule="EFRideSharing" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ipC-Kc-CF8" id="1GS-vG-LEN">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r7g-O9-azV" id="3PK-m3-UaA">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEx-wC-MX0">
+                                                    <rect key="frame" x="18" y="27" width="101" height="46"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="101" id="OS4-Ve-oYa"/>
+                                                        <constraint firstAttribute="width" constant="101" id="Yi0-2n-V9J"/>
+                                                        <constraint firstAttribute="height" constant="46" id="yzY-2l-GxF"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="40"/>
+                                                    <color key="textColor" red="0.52941176470588236" green="0.70588235294117652" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="OS4-Ve-oYa"/>
+                                                            <exclude reference="yzY-2l-GxF"/>
+                                                        </mask>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="White Plains" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3y4-CN-bbd">
+                                                    <rect key="frame" x="200" y="52" width="86" height="21"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="0.68627450980392157" green="0.68627450980392157" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="from:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDg-Ku-U74">
+                                                    <rect key="frame" x="150" y="27" width="37" height="21"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="0.68627450980392157" green="0.68627450980392157" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7R1-Px-Zv1">
+                                                    <rect key="frame" x="150" y="52" width="19" height="21"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="0.68627450980392157" green="0.68627450980392157" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EF" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oS5-CA-uKe">
+                                                    <rect key="frame" x="200" y="27" width="19" height="21"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="0.68627450980392157" green="0.68627450980392157" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7R1-Px-Zv1" firstAttribute="top" secondItem="eDg-Ku-U74" secondAttribute="bottom" constant="4" id="2ZB-BL-qyM"/>
+                                                <constraint firstItem="oS5-CA-uKe" firstAttribute="leading" secondItem="3y4-CN-bbd" secondAttribute="leading" id="7m7-wR-3iH"/>
+                                                <constraint firstAttribute="centerX" secondItem="iEx-wC-MX0" secondAttribute="centerX" constant="122" id="Azr-rw-aJa"/>
+                                                <constraint firstItem="eDg-Ku-U74" firstAttribute="leading" secondItem="7R1-Px-Zv1" secondAttribute="leading" id="GX1-bV-Ukx"/>
+                                                <constraint firstItem="oS5-CA-uKe" firstAttribute="leading" secondItem="eDg-Ku-U74" secondAttribute="trailing" constant="13" id="Qw9-ef-zix"/>
+                                                <constraint firstItem="iEx-wC-MX0" firstAttribute="top" secondItem="3PK-m3-UaA" secondAttribute="topMargin" constant="19" id="fI1-wh-KWd"/>
+                                                <constraint firstItem="oS5-CA-uKe" firstAttribute="top" secondItem="3PK-m3-UaA" secondAttribute="topMargin" constant="19" id="qkw-Tn-rlg"/>
+                                                <constraint firstItem="eDg-Ku-U74" firstAttribute="top" secondItem="3PK-m3-UaA" secondAttribute="topMargin" constant="19" id="ts0-zd-qR4"/>
+                                                <constraint firstItem="3y4-CN-bbd" firstAttribute="top" secondItem="oS5-CA-uKe" secondAttribute="bottom" constant="5" id="vWN-fZ-4w5"/>
+                                                <constraint firstItem="iEx-wC-MX0" firstAttribute="leading" secondItem="3PK-m3-UaA" secondAttribute="leadingMargin" constant="10" id="w16-Ua-Z33"/>
+                                                <constraint firstItem="eDg-Ku-U74" firstAttribute="leading" secondItem="iEx-wC-MX0" secondAttribute="trailing" constant="31" id="wc2-Yd-urS"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="Azr-rw-aJa"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="fromLabel" destination="3y4-CN-bbd" id="X1A-9W-aMg"/>
+                                            <outlet property="timeLabel" destination="iEx-wC-MX0" id="evI-c6-NDC"/>
+                                            <outlet property="toLabel" destination="oS5-CA-uKe" id="6tb-sZ-ysz"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="4AA-ee-QdB" secondAttribute="trailing" id="FvN-2q-qFa"/>
                             <constraint firstItem="STd-xP-mNF" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="Isq-4l-u1F"/>
-                            <constraint firstItem="3cD-9N-nh4" firstAttribute="top" secondItem="STd-xP-mNF" secondAttribute="bottom" id="LL9-Zu-iwQ"/>
                             <constraint firstAttribute="trailing" secondItem="2K9-p8-2PG" secondAttribute="trailing" id="Ph0-xU-abq"/>
-                            <constraint firstAttribute="trailing" secondItem="3cD-9N-nh4" secondAttribute="trailing" id="QLU-tO-wdx"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="3cD-9N-nh4" secondAttribute="bottom" id="aWm-mr-p69"/>
+                            <constraint firstItem="4AA-ee-QdB" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="WdD-th-32t"/>
                             <constraint firstAttribute="centerX" secondItem="STd-xP-mNF" secondAttribute="centerX" id="awP-gl-BHz"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="4AA-ee-QdB" secondAttribute="bottom" id="fgv-2b-PiR"/>
+                            <constraint firstItem="4AA-ee-QdB" firstAttribute="top" secondItem="STd-xP-mNF" secondAttribute="bottom" id="ha5-n8-cQg"/>
                             <constraint firstItem="2K9-p8-2PG" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="i5i-Cu-NXy"/>
                             <constraint firstAttribute="trailing" secondItem="STd-xP-mNF" secondAttribute="trailing" id="k0i-SS-0eg"/>
                             <constraint firstItem="2K9-p8-2PG" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="mAy-Q3-dRt"/>
-                            <constraint firstItem="3cD-9N-nh4" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="pQQ-dS-hFE"/>
                             <constraint firstItem="STd-xP-mNF" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="q2V-k2-O2s"/>
                         </constraints>
                     </view>
@@ -76,7 +143,7 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="ridesTableView" destination="3cD-9N-nh4" id="zkl-bQ-94P"/>
+                        <outlet property="ridesTableView" destination="4AA-ee-QdB" id="d6G-6c-6id"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
