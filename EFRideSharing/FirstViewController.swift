@@ -26,10 +26,32 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        var test = Ride(to: "Tarrytown", from: "White Plains", time: "18:00")
+        let stringDate = "2015-09-24 10:32"
+        
+        var formatter = NSDateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm"
+        
+        var date = formatter.dateFromString(stringDate)
+        
+        let defaultTimeZoneStr = formatter.stringFromDate(date!);
+        
+        var timeDisplayFormatter = NSDateFormatter()
+        timeDisplayFormatter.dateFormat = "HH:mm"
+        
+        println("time format")
+        println(timeDisplayFormatter.stringFromDate(date!))
+        
+        println("date + time format")
+        println(formatter.stringFromDate(date!))
+        
+        
+        
+        
+        
+        var test = Ride(to: "Tarrytown", from: "White Plains", time: date!)
         rideArray.append(test)
         ridesTableView.reloadData()
-        var test2 = Ride(to: "EF", from: "Train Station", time: "19:00")
+        var test2 = Ride(to: "EF", from: "Train Station", time: date!)
         rideArray.append(test2)
         ridesTableView.reloadData()
         
@@ -71,13 +93,19 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 println("to -> \(toVal)")
                 println("from -> \(fromVal)")
                 
+                var formatter = NSDateFormatter()
+                formatter.dateFormat = "yyyy-MM-dd HH:mm"
+                
+                var date = formatter.dateFromString(time)
+                
+                
                 /*
                 self.cell.timeLabel.text = time
                 self.cell.fromLabel.text = fromVal
                 self.cell.toLabel.text = toVal
                 */
                 
-                let newCellContent = Ride(to: toVal, from: fromVal, time: time)
+                let newCellContent = Ride(to: toVal, from: fromVal, time: date!)
                 
                 rideArray.append(newCellContent)
                 self.ridesTableView.reloadData()
@@ -114,8 +142,12 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
       //  cell.textLabel?.text = "test"
 
+        var dateInfo = rideArray[indexPath.row].time
+        var timeDisplayFormatter = NSDateFormatter()
+        timeDisplayFormatter.dateFormat = "HH:mm"
         
-        cell.timeLabel.text = rideArray[indexPath.row].time
+        
+        cell.timeLabel.text = timeDisplayFormatter.stringFromDate(dateInfo!)
         cell.toLabel.text = rideArray[indexPath.row].to
         cell.fromLabel.text = rideArray[indexPath.row].from
         

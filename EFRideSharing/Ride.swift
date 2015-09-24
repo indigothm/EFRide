@@ -12,9 +12,9 @@ class Ride {
     
     var to: String?
     var from: String?
-    var time: String?
+    var time: NSDate?
     
-    init (to: String, from: String, time: String) {
+    init (to: String, from: String, time: NSDate) {
         self.to = to
         self.from = from
         self.time = time
