@@ -164,7 +164,6 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         return cell
     }
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
