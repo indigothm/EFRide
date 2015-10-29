@@ -28,30 +28,30 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         let stringDate = "2015-09-24 18:32"
         
-        var formatter = NSDateFormatter()
+        let formatter = NSDateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm"
         
-        var date = formatter.dateFromString(stringDate)
+        let date = formatter.dateFromString(stringDate)
         
         let defaultTimeZoneStr = formatter.stringFromDate(date!);
         
-        var timeDisplayFormatter = NSDateFormatter()
+        let timeDisplayFormatter = NSDateFormatter()
         timeDisplayFormatter.dateFormat = "HH:mm"
         
-        println("time format")
-        println(timeDisplayFormatter.stringFromDate(date!))
+        print("time format")
+        print(timeDisplayFormatter.stringFromDate(date!))
         
-        println("date + time format")
-        println(formatter.stringFromDate(date!))
-        
-        
+        print("date + time format")
+        print(formatter.stringFromDate(date!))
         
         
         
-        var test = Ride(to: "Tarrytown", from: "White Plains", time: date!)
+        
+        
+        let test = Ride(to: "Tarrytown", from: "White Plains", time: date!)
         rideArray.append(test)
         ridesTableView.reloadData()
-        var test2 = Ride(to: "EF", from: "Train Station", time: date!)
+        let test2 = Ride(to: "EF", from: "Train Station", time: date!)
         rideArray.append(test2)
         ridesTableView.reloadData()
         
@@ -79,7 +79,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         ref.observeEventType(.Value, withBlock: { snapshot in
             
-            println("test")
+            print("test")
             
             for childSnap in  snapshot.children.allObjects as! [FDataSnapshot]{
                 
@@ -89,14 +89,14 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 let fromVal = childSnap.value["from"] as! String
                 
                 
-                println("time -> \(time)")
-                println("to -> \(toVal)")
-                println("from -> \(fromVal)")
+                print("time -> \(time)")
+                print("to -> \(toVal)")
+                print("from -> \(fromVal)")
                 
-                var formatter = NSDateFormatter()
+                let formatter = NSDateFormatter()
                 formatter.dateFormat = "yyyy-MM-dd HH:mm"
                 
-                var date = formatter.dateFromString(time)
+                let date = formatter.dateFromString(time)
                 
                 
                 /*
@@ -108,11 +108,11 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 let newCellContent = Ride(to: toVal, from: fromVal, time: date!)
                 
                 rideArray.append(newCellContent)
-                rideArray.sort({$0.time!.timeIntervalSinceNow < $1.time!.timeIntervalSinceNow})
+                rideArray.sortInPlace({$0.time!.timeIntervalSinceNow < $1.time!.timeIntervalSinceNow})
                 
-                println("time travel")
+                print("time travel")
                 for r in rideArray {
-                    println(r.time!)
+                    print(r.time!)
                 
                 }
                 
@@ -125,7 +125,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
             
             
             }, withCancelBlock: { error in
-                println(error.description)
+                print(error.description)
         })
         
         
@@ -150,8 +150,8 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
       //  cell.textLabel?.text = "test"
 
-        var dateInfo = rideArray[indexPath.row].time
-        var timeDisplayFormatter = NSDateFormatter()
+        let dateInfo = rideArray[indexPath.row].time
+        let timeDisplayFormatter = NSDateFormatter()
         timeDisplayFormatter.dateFormat = "HH:mm"
         
         
@@ -159,8 +159,8 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         cell.toLabel.text = rideArray[indexPath.row].to
         cell.fromLabel.text = rideArray[indexPath.row].from
         
-        println(indexPath.row)
-        println(indexPath.length)
+        print(indexPath.row)
+        print(indexPath.length)
         
         return cell
     }

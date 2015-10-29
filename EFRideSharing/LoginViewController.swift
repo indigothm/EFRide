@@ -32,22 +32,22 @@ class LoginViewController: UIViewController {
 
     @IBAction func loginWithFacebookDidTouch(sender: UIButton) {
         
-    println("login button did touch")
+    print("login button did touch")
         
         facebookLogin.logInWithReadPermissions(["email"], fromViewController: self, handler: {
             (facebookResult, facebookError) -> Void in
             if facebookError != nil {
-                println("Facebook login failed. Error \(facebookError)")
+                print("Facebook login failed. Error \(facebookError)")
             } else if facebookResult.isCancelled {
-                println("Facebook login was cancelled.")
+                print("Facebook login was cancelled.")
             } else {
                 let accessToken = FBSDKAccessToken.currentAccessToken().tokenString
                 self.ref.authWithOAuthProvider("facebook", token: accessToken,
                     withCompletionBlock: { error, authData in
                         if error != nil {
-                            println("Login failed. \(error)")
+                            print("Login failed. \(error)")
                         } else {
-                            println("Logged in! \(authData.providerData)")
+                            print("Logged in! \(authData.providerData)")
                             // perform segue with identifier
                             self.performSegueWithIdentifier("loginSuccess", sender: self)
                         }

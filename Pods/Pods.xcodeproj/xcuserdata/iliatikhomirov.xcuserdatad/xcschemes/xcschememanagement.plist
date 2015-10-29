@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Firebase.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FirebaseUI.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,32 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>57E43C685E3F16D55069BED06FC8F475</key>
+		<key>57ADC05E440A960212657DE6DA1FEDD5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6462E749C2A3234F537CB7085799EA80</key>
+		<key>5D69761C2CD2A1E5C013537B29CAB4CF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A99ECFC6847DEFA814836979150016F0</key>
+		<key>7F869A0A80C706D6A6D4698DC0918B37</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B1D9772F982A8CB001FD55E2F72B9759</key>
+		<key>94A50FB884552F1E25589DD6EA641782</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F5E93622755F3FDA95D1F6830DD4C033</key>
+		<key>B7AC9326D819482593FE118E915409D7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FD6DD50991012D8B696A01BA312A5AC2</key>
+		<key>F5ACF367AE3BD7A7F2AF2D430901DF7B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FD5D24B8C263884F880B49C9DD116CC7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

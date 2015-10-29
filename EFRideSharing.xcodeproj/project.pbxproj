@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19909C4EBA7943D2B4B6662B /* Pods_EFRideSharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A44F603D1DE4E88EF152A0F8 /* Pods_EFRideSharing.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		19909C4EBA7943D2B4B6662B /* Pods_EFRideSharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A44F603D1DE4E88EF152A0F8 /* Pods_EFRideSharing.framework */; };
 		3F3A4D071BB4872E00C4FA3D /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3A4D061BB4872E00C4FA3D /* HeaderTableViewCell.swift */; };
 		3F3A4D091BB4D6D100C4FA3D /* AddTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3A4D081BB4D6D100C4FA3D /* AddTableViewController.swift */; };
+		3F7765011BE1B38F00EC1005 /* FromTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7765001BE1B38F00EC1005 /* FromTableViewController.swift */; };
 		3F7B56181BB21FD300570EBD /* RideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7B56171BB21FD300570EBD /* RideTableViewCell.swift */; };
 		3F7B561A1BB2D93B00570EBD /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7B56191BB2D93B00570EBD /* Ride.swift */; };
 		3F7B561E1BB37C2000570EBD /* AddNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7B561D1BB37C2000570EBD /* AddNewViewController.swift */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		3F3A4D061BB4872E00C4FA3D /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
 		3F3A4D081BB4D6D100C4FA3D /* AddTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTableViewController.swift; sourceTree = "<group>"; };
+		3F7765001BE1B38F00EC1005 /* FromTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromTableViewController.swift; sourceTree = "<group>"; };
 		3F7B56171BB21FD300570EBD /* RideTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideTableViewCell.swift; sourceTree = "<group>"; };
 		3F7B56191BB2D93B00570EBD /* Ride.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
 		3F7B561D1BB37C2000570EBD /* AddNewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				3F7B56171BB21FD300570EBD /* RideTableViewCell.swift */,
 				3F962FBC1BAE7E0700F110E5 /* SecondViewController.swift */,
 				3F962FBD1BAE7E0700F110E5 /* Main.storyboard */,
+				3F7765001BE1B38F00EC1005 /* FromTableViewController.swift */,
 				3F7B56191BB2D93B00570EBD /* Ride.swift */,
 				3F962FA01BAE7DF100F110E5 /* Images.xcassets */,
 				3F962FA21BAE7DF100F110E5 /* LaunchScreen.xib */,
@@ -206,7 +209,9 @@
 		3F962F8A1BAE7DF100F110E5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Ilia Tikhomirov";
 				TargetAttributes = {
 					3F962F911BAE7DF100F110E5 = {
@@ -317,6 +322,7 @@
 				3F962FBE1BAE7E0700F110E5 /* AppDelegate.swift in Sources */,
 				3F3A4D091BB4D6D100C4FA3D /* AddTableViewController.swift in Sources */,
 				3F962FBF1BAE7E0700F110E5 /* FirstViewController.swift in Sources */,
+				3F7765011BE1B38F00EC1005 /* FromTableViewController.swift in Sources */,
 				3F7B561E1BB37C2000570EBD /* AddNewViewController.swift in Sources */,
 				3F7B561A1BB2D93B00570EBD /* Ride.swift in Sources */,
 			);
@@ -373,6 +379,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -388,7 +395,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -426,7 +433,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -441,6 +448,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = EFRideSharing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thm.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "EFRideSharing/EFRideSharing-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -455,6 +463,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = EFRideSharing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thm.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "EFRideSharing/EFRideSharing-Bridging-Header.h";
 			};
@@ -474,6 +483,7 @@
 				);
 				INFOPLIST_FILE = EFRideSharingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thm.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EFRideSharing.app/EFRideSharing";
 			};
@@ -489,6 +499,7 @@
 				);
 				INFOPLIST_FILE = EFRideSharingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thm.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EFRideSharing.app/EFRideSharing";
 			};

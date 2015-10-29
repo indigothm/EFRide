@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if ref.authData != nil {
             // user authenticated
-            println(ref.authData)
+            print(ref.authData)
             var initialViewController = storyboard.instantiateViewControllerWithIdentifier("tabBarInit") as! UITabBarController
             //fix tint
             initialViewController.tabBar.tintColor =  UIColor(red:0.53, green:0.71, blue:0.91, alpha:1.0)
@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         } else {
             // No user is signed in
-            var initialViewController = storyboard.instantiateViewControllerWithIdentifier("loginView") as! UIViewController
+            var initialViewController = storyboard.instantiateViewControllerWithIdentifier("loginView") 
             
             self.window?.rootViewController = initialViewController
             self.window?.makeKeyAndVisible()
@@ -71,7 +71,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(application: UIApplication, openURL url: NSURL,
-        sourceApplication: String?, annotation: AnyObject?) -> Bool {
+        sourceApplication: String?, annotation: AnyObject) -> Bool {
             return FBSDKApplicationDelegate.sharedInstance()
                 .application(application, openURL: url,
                     sourceApplication: sourceApplication, annotation: annotation)
