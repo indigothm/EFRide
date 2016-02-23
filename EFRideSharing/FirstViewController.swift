@@ -44,39 +44,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         print("date + time format")
         print(formatter.stringFromDate(date!))
         
-        
-        
-        
-        
-        let test = Ride(to: "Tarrytown", from: "White Plains", time: date!)
-        rideArray.append(test)
-        ridesTableView.reloadData()
-        let test2 = Ride(to: "EF", from: "Train Station", time: date!)
-        rideArray.append(test2)
-        ridesTableView.reloadData()
-        
-        
-       
-        // dataSource = FirebaseTableViewDataSource(ref: ref, cellReuseIdentifier: "rideCell", view: self.ridesTableView)
 
-        /*
-        dataSource.populateCellWithBlock
-            { (cell,snapshot) -> Void in
-                
-                let tvc: RideTableViewCell = cell as! RideTableViewCell
-                
-                let snapshot: FDataSnapshot = snapshot as! FDataSnapshot
-                
-                println(snapshot)
-                
-               // tvc.timeLabel.text = snapshot.value["time"] as? String
-            
-                tvc.toLabel.text = snapshot.value["time"] as? String
-
-                
-        } 
-        */
-        
         ref.observeEventType(.Value, withBlock: { snapshot in
             
             print("test")
@@ -98,13 +66,6 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 
                 let date = formatter.dateFromString(time)
                 
-                
-                /*
-                self.cell.timeLabel.text = time
-                self.cell.fromLabel.text = fromVal
-                self.cell.toLabel.text = toVal
-                */
-                
                 let newCellContent = Ride(to: toVal, from: fromVal, time: date!)
                 
                 rideArray.append(newCellContent)
@@ -118,7 +79,6 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 
                 self.ridesTableView.reloadData()
                 
-                // TODO: Assign cell atributes with their values from database
             }
             
             
@@ -131,7 +91,6 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         ridesTableView.delegate = self
         ridesTableView.dataSource = self
-       // ridesTableView.dataSource = dataSource
         
         
     }

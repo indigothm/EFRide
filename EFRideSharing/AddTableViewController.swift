@@ -7,12 +7,22 @@
 //
 
 import UIKit
+import Firebase
 
 class AddTableViewController: UITableViewController {
 
     @IBAction func cancelButtonDidTouch(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    @IBOutlet weak var fromLabel: UILabel!
+    @IBOutlet weak var toLabel: UILabel!
+    
+    @IBOutlet weak var datePickerCell: UITableViewCell!
+    
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
+    var ref = Firebase(url: "https://efride.firebaseio.com/Rides")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,82 +32,98 @@ class AddTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        datePickerCell.hidden = true
+            
+        let date = NSDate()
+        
+        let formatter = NSDateFormatter()
+        
+        formatter.dateFormat = "yyyy-MM-dd HH:mm"
+        
+        let defaultTimeZoneStr = formatter.stringFromDate(date)
+        
+        timeLabel.text = defaultTimeZoneStr
+        
+        datePicker.minimumDate = NSDate()
+
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    // MARK: - Table view data source
     
-    /*
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Potentially incomplete method implementation.
-        // Return the number of sections.
-        return 0
+    @IBAction func okDidTouch(sender: AnyObject) {
+        
+        let date = datePicker.date
+        
+        let formatter = NSDateFormatter()
+        
+        formatter.dateFormat = "yyyy-MM-dd HH:mm"
+        
+        let defaultTimeZoneStr = formatter.stringFromDate(date)
+        
+        timeLabel.text = defaultTimeZoneStr
+        
+        NewRide.instance.time = datePicker.date
+        
+        datePickerCell.hidden = true
+        
+       
+        
+    }
+    
+    @IBOutlet weak var timeLabel: UILabel!
+    
+    @IBAction func createDidTouch(sender: AnyObject) {
+        
+            let to = self.toLabel.text!
+        
+            let from = self.fromLabel.text!
+        
+            let time = self.timeLabel.text!
+        
+            let dict = ["to": to, "from":  from, "time": time]
+        
+            let ref = self.ref.childByAppendingPath(String(NSDate()))
+            ref.setValue(dict)
+        
+            self.dismissViewControllerAnimated(true, completion: {});
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        
+        if let fromSelectionVal = NewRide.instance.from {
+            fromLabel.text = fromSelectionVal
+        }
+        
+        if let toSelectionVal = NewRide.instance.to {
+            toLabel.text = toSelectionVal
+        }
+        
+    }
+    
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        switch indexPath.row {
+            
+        case 2:
+           datePickerCell.hidden = false
+           let cell = tableView.cellForRowAtIndexPath(indexPath)
+           cell?.selected = false
+           cell?.accessoryType = UITableViewCellAccessoryType.None
+            
+            
+        default :
+            print ("test default")
+            
+        }
+        
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete method implementation.
-        // Return the number of rows in the section.
-        return 0
-    }
-    */
-
-    /*
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
-
-        // Configure the cell...
-
-        return cell
-    }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

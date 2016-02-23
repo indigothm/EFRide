@@ -21,12 +21,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        var storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         if ref.authData != nil {
             // user authenticated
             print(ref.authData)
-            var initialViewController = storyboard.instantiateViewControllerWithIdentifier("tabBarInit") as! UITabBarController
+            let initialViewController = storyboard.instantiateViewControllerWithIdentifier("tabBarInit") as! UITabBarController
             //fix tint
             initialViewController.tabBar.tintColor =  UIColor(red:0.53, green:0.71, blue:0.91, alpha:1.0)
             
@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         } else {
             // No user is signed in
-            var initialViewController = storyboard.instantiateViewControllerWithIdentifier("loginView") 
+            let initialViewController = storyboard.instantiateViewControllerWithIdentifier("loginView") 
             
             self.window?.rootViewController = initialViewController
             self.window?.makeKeyAndVisible()
